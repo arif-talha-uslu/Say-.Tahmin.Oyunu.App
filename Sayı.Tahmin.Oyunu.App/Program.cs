@@ -24,9 +24,9 @@ namespace Tahmin.App
                 {
                     do//SEÇİMLER MENÜSÜ:
                     {
-                        Console.WriteLine("-----------------\n SEÇİMLER MENÜSÜ\n1-'Kolay' = 1 ve 5 arasında sayı tahmini 3 deneme hakkı(Doğru cevap= '1' Puan)\n2-'Orta' = 1 ve 10 arasında sayı tahmini 3 deneme hakkı(Doğru cevap= '3' Puan)\n3-'Zor' = 1 ve 20 arasında sayı tahmini 4 deneme hakkı(Doğru cevap= '6' Puan)\n\nSeçiniz:");
+                        Console.WriteLine("-----------------\n SEÇİMLER MENÜSÜ\n1-'Kolay' = 1 ve 5 arasında sayı tahmini 3 deneme hakkı(Doğru cevap= '1' Puan)\n2-'Orta' = 1 ve 10 arasında sayı tahmini 3 deneme hakkı(Doğru cevap= '3' Puan)\n3-'Zor' = 1 ve 20 arasında sayı tahmini 4 deneme hakkı(Doğru cevap= '6' Puan)\n4-'Çıkış'\n\nSeçiniz:");
                         seviye = byte.Parse(Console.ReadLine());
-                    } while (seviye != 1 && seviye != 2 && seviye != 3);
+                    } while (seviye != 1 && seviye != 2 && seviye != 3 && seviye != 4);
 
                     switch (seviye)//FARKLI SEVİYELER İÇİN DEĞİŞKEN DEĞERLERİ ATANIYOR...
                     {
@@ -48,8 +48,12 @@ namespace Tahmin.App
                             aralik = 20;
                             Console.WriteLine("ZORLUK ZOR 1-20 arasında bir sayı... DoğruCevap:6puan\nTAHMİN ET");
                             break;
+                        case 4:
+                            Console.WriteLine($"Yine bekleriz... Puanınız:{puan}");
+                            Console.ReadKey();
+                            return;
                     }
-
+                    
                     Random rnd5 = new Random();
                     int rndm = rnd5.Next(aralik);
 
