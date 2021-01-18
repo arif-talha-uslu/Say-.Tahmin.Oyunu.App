@@ -1,6 +1,7 @@
 # Sayi.Tahmin.Oyunu.App
 Oyun Tamamlandı
 
+ - Kullanıcı yanlış bir değer girerse, program kapanmaktansa, mesaj verip seçim yapılan ana menüye döndürülüyor.
  - Her denemede, denememizin tahmin edilmeye çalışılan sayıdan büyük mü? / küçük mü? olduğu ip ucu veriliyor
  - Her aşama sonlandığında ana menü olarak belirlenen "Seçimler Menüsü" ne dönülüyor
  - Seçimler Menüsünde Yeniden zorluk seçilip devam ediliyor
